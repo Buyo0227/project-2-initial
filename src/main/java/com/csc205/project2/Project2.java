@@ -10,32 +10,26 @@ import java.util.List;
  *
  */
 public class Project2 {
-
     public static void main(String[] args) {
 
-        /*
-        The following code works with the example design given.
-         */
 
-        /*ThreeDimensionalShape sphere = new Sphere(2.0);
-        ThreeDimensionalShape cube = new Cube(5.0);
-        ThreeDimensionalShape cylinder = new Cylinder(4.0, 1.0);
 
-        // We'll cover this stuff in module 4
-        List<ThreeDimensionalShape> shapes = new ArrayList<>();
-        shapes.add(sphere);
-        shapes.add(cube);
-        shapes.add(cylinder);
+        Sphere Sphere1 = new Sphere(2.0);
+        System.out.println(Sphere1);
 
-        shapes.forEach(System.out::println);*/
+        Cube Cube1 = new Cube(5.0);
+        System.out.println(Cube1);
 
-        /*
-        The following code works with the code given.
-         */
+        Cylinder Cylinder1 = new Cylinder(4.0, 1.0);
+        System.out.println(Cylinder1);
 
-        Sphere sphere = new Sphere(2.0);
-        System.out.println(sphere);
+        Cone Cone1 = new Cone(Sphere1.getRadius(), Cylinder1.getHeight());
+        System.out.println(Cone1);
+
+
     }
+
+
 
 }
 
